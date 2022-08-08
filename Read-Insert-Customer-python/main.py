@@ -91,7 +91,7 @@ class MyWindow(QMainWindow):
         all_rows = []
 
         for row in rows :
-            if(count == 173):
+            if(count == 172):
                 break
 
             data = []
@@ -115,7 +115,7 @@ class MyWindow(QMainWindow):
 
         cursor = conn.cursor()
 
-        sql = "INSERT INTO müsteri (`İsim`, `Cihaz Seri No`) VALUES (%s, %s)"
+        sql = "INSERT INTO müsteri (`Cihaz Seri No`, `İsim`) VALUES (%s, %s)"
 
         for i in range(len(all_rows)):
             try:
